@@ -9,8 +9,11 @@ import store from '@/store/index'
 Vue.use(Vuex)
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
+import {LoadingPlugin} from 'vux'
+Vue.use(LoadingPlugin)
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
